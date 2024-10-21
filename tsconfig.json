@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                         // 编译后的目标 JavaScript 版本
+    "module": "CommonJS",                    // 使用的模块系统
+    "strict": true,                          // 启用严格类型检查
+    "esModuleInterop": true,                 // 使 CommonJS 和 ES 模块互操作
+    "forceConsistentCasingInFileNames": true,// 强制文件名一致
+    "skipLibCheck": true,                    // 跳过库文件的类型检查
+    "outDir": "./dist",                       // 输出目录
+    "sourceMap": true, 
+    "moduleResolution": "node",
+    "types": ["node"]
+  },
+  "include": ["src/**/*"],                   // 包含 src 文件夹下所有文件
+  "exclude": ["node_modules", "**/node_modules/*"]                // 排除 node_modules 文件夹
+}
